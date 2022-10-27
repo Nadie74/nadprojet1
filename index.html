@@ -9,18 +9,24 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Fuzzy Bubbles"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    />
     <title>La Maison radieuse - Rezé</title>
   </head>
   <body>
     <!--En-tête photo titre menu-->
     <header>
-      <img
-        src="images/logoprojet1.jpg"
-        alt="Maison radieuse"
-        class="logoprojet1"
-        width="200"
-        height="200"
-      />
+      <a href="/index.html">
+        <img
+          src="images/logoprojet.jpg"
+          alt="Maison radieuse"
+          class="logoprojet"
+          width="200"
+          height="200"
+      /></a>
       <h1>La maison radieuse - Rezé</h1>
       <nav>
         <ul>
@@ -31,7 +37,7 @@
       </nav>
     </header>
 
-    <!--1e section présentation texte et image-->
+    <!--1e section présentation texte et image avec bordures et couleur de fond-->
     <section class="corbusier">
       <h2>The architect Le Corbusier</h2>
       <div class="flex-container">
@@ -55,7 +61,7 @@
       </div>
     </section>
 
-    <!--2e section concept texte-->
+    <!--2e section concept texte et bordures couleur de fond-->
     <section>
       <article class="concept">
         <h2>Presentation of the concept</h2>
@@ -77,23 +83,34 @@
       </article>
     </section>
 
-    <!--3e section image accueil-->
+    <!--3e section avec image sur totalité et bordures-->
     <section>
       <div class="imageaccueil">
         <img src="images/imageaccueil.JPG" alt="imageaccueil" width="200" />
       </div>
     </section>
 
-    <!--pied de page avec menu droits sources logo et contact-->
+    <!--pied de page avec droits sources liens contact-->
     <footer>
       <div class="Copyright">Nadège Dervillé - All rights reserved</div>
       <img
         src="images/appareilphotodessin.jpg"
         class="appareilphotodessin"
-        alt="appareilphotodessin"
+        alt="camera"
         width="80"
       />
-      <a mailto="contact@me.fr">Contact me</a>
+      <a href="https://www.reze.fr/pratique/culture/visiter-maison-radieuse"
+        >Sources</a
+      >
+      <div>
+        <img
+          class="vertical-center"
+          src="images/email.svg"
+          alt="mail"
+          width="20px"
+        />
+        <a href="mailto:contact@me.fr">Contact me</a>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>

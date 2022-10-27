@@ -5,12 +5,13 @@
 }
 a /* liens */ {
     text-decoration: none;
+
 }
-a:hover {
-    color: red
-}
+
 a:active, a:visited, a:link {
     color: black;
+    
+
 }
 a:hover /* apparence au survol des liens */ {
     color: rgb(139, 0, 5);
@@ -18,19 +19,30 @@ a:hover /* apparence au survol des liens */ {
 ul, li {
     padding: 0;
     margin: 0;
+}    
+li {
+    /*à modifier pour l'encadrement*/
+    font-weight: bold;
 }
+
 li /*menu sans numérotation */
 {
     list-style-type: none;
-    background-color: rgb(151, 151, 228);
+}
+.logoprojet {
+    border: 3px solid red; 
+}
+
+.vertical-center {
+    vertical-align: text-bottom;
 }
 
 header, footer /*même encadrement et couleur pour l'en-tête et pied de page */
 {
     border: 1px solid green;
     border-radius: 10px 5px 10px 5px;
-    box-shadow: 6px 6px 6px green;
-    background-color: rgb(181, 193, 188);
+    box-shadow: 6px 6px 6px rgb(71, 162, 71);
+    background-color: lightseagreen;
 }
 
 body {
@@ -50,9 +62,11 @@ header {
 }
 
 header h1 {
-    font-size: 1.2rem;
-    color: darkslateblue;
-    font-family: Fuzzy Bubbles, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(40, 24, 148);
+    font-family: 'Open Sans'; 
+    text-shadow: 2px 2px 4px yellow;
 }
 
 header nav {
@@ -60,13 +74,19 @@ header nav {
     margin-top: 1rem;
 }
 
-header li {
+header nav a{
+    padding: 5px;
+}
+
+header li {/*liens pages annexes bordures et couleur*/
     display: inline;
     margin-right: 1rem;
-    font-family: Fuzzy system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans';
+    border: 3px yellow outset;
+    border-radius: 5px 5px 5px 5px;
 
 }
-h2 {
+h2, h3, h4 {
     color:blue;
     font-family: Fuzzy system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -81,7 +101,7 @@ p {
 
 }
 .corbusier {
-    background-color: rgb(172, 178, 227);
+    background-color: rgb(205, 209, 234);
     border: 1px solid blue;
     border-radius: 10px 5px 10px 5px;
     box-shadow: 6px 6px 6px blue;
@@ -89,15 +109,23 @@ p {
     padding: 12px;
     margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 
 .illustration img, .imageaccueil img {
     width: 100%;
     height: auto;
+    border: 3px solid red;
+    margin: auto;
+}
+.imageaccueil img {
+    border: 3px solid red;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px red;
 }
 .concept {
-    background-color: rgb(193, 201, 250);
+    background-color: rgb(205, 209, 239);
     border: 1px solid blue;
     border-radius: 10px 5px 10px 5px;
     box-shadow: 6px 6px 6px blue;
@@ -105,8 +133,123 @@ p {
     padding: 12px;
     margin-bottom: 20px;
     font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.genesis {
+    background-color: rgb(205, 209, 239);
+    border: 1px solid blue;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px blue;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;  
+}
+.genesis-detail {
+    display: none;
+}
+.genesis-detail.show {
+    display: block;
+}
+.container-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
+.container-gallery img{
+    margin-bottom: 30px;
+}
+.gestion {
+    background-color: rgb(205, 209, 239);
+    border: 1px solid blue;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px blue;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold; 
+
+}
+.flat {
+    background-color: rgb(205, 209, 239);
+    border: 1px solid blue;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px blue;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold; 
+}
+.school {
+    background-color: rgb(205, 209, 239);
+    border: 1px solid blue;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px blue;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold; 
+}
+.garden {
+    background-color: rgb(205, 209, 239);
+    border: 1px solid blue;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px blue;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold; 
+}
+
+.description {
+    background-color: rgb(205, 209, 239);
+    border: 1px solid blue;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px blue;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold; 
+}
+.description-detail {
+    display: none;
+}
+.description-detail.show {
+    display: block;
+}
+.historic {
+    background-color: rgb(205, 209, 239);
+    border: 1px solid blue;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px blue;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold; 
+}
+.conditions {
+    background-color: rgb(205, 209, 239);
+    border: 1px solid blue;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px blue;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.horaires tarifs, reservations, ul li {
+    background-color: rgb(205,209,239);
+    font-size: smaller; /*à vérifier*/
+}
 
 footer {
     text-align: justify;
@@ -114,7 +257,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
+    font-weight: bold;
 }
+
 
 /* Les adaptations pour la version desktop */
 
@@ -128,9 +273,16 @@ footer {
     .illustration {
         width: 30%
     }
+    h1 {
+        font-size: 10rem;
+    }
+    a {
+        border-radius: 1px 2px 1px 2px;
+        font-size: large;
+    }
 }
 
-/* @media  screen and (min-width: 768px) and (max-width: 992px) {
+@media  screen and (min-width: 768px) and (max-width: 992px) {
     .content {
         width: 500px;
         background-color: bisque;
@@ -140,6 +292,10 @@ footer {
     .content {
         width: 800px;
     }
+    h1 {
+        font-size: 10rem;
+    }
+}
 @media all and (max-width: 1024px) {
     nav {
         width: auto;
@@ -157,4 +313,7 @@ footer {
     nav a:hover {
         border-bottom: 0;
     }
-} */
+    h1 {
+        font-size: 8rem;
+    }
+}
