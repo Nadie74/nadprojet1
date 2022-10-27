@@ -158,7 +158,7 @@ p {
     flex-wrap: wrap;
 }
 
-.container-gallery img{
+.container-gallery img{ /*aligner les photos automatiquement*/
     margin-bottom: 30px;
 }
 .gestion {
