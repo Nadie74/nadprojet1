@@ -33,7 +33,7 @@ li /*menu sans numérotation */
     border: 3px solid red; 
 }
 
-.vertical-center {
+.vertical-center { /*aligner icône enveloppe avec contact me*/
     vertical-align: text-bottom;
 }
 
